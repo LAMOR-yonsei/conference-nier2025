@@ -95,7 +95,14 @@ td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center
 /* Sponsor Images */
 table.sponsors{width:auto; height:auto; max-width:800px; max-height:150px}
 td.sponsor{white-space:nowrap; width:30%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width:auto; height:auto; max-height:100%; max-width: 90%;}
+td.sponsor img {
+    width: auto; 
+    height: auto; 
+    max-height: 150px; 
+    max-width: 90%;
+    object-fit: contain; 
+    object-position: center; 
+}
 
 /* The Table on the Program Page */
 td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
@@ -129,3 +136,15 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     table.footer{font-size:0.33em;}
 }
 
+
+.icon-container {
+    display: inline-block; /* 또는 inline */
+    vertical-align: middle; /* 텍스트와 아이콘 수직 정렬 (선택 사항) */
+    margin-left: 5px; /* 텍스트와 아이콘 사이 간격 (선택 사항) */
+}
+
+.title-icon {
+    /* 아이콘 크기, 스타일 등 추가 (필요한 경우) */
+    width: 20px;
+    height: 20px;
+}
