@@ -46,12 +46,30 @@
         ⁕ 주차: <b>지하주차장 (P3)</b>를 이용해주시기 바라며, 오키드홀 앞에서 주차 등록을 해주시기 바랍니다. <br>
     </p>
 
-    <div style="text-align: center;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.319785741478!2d126.81620821305097!3d37.54752892509868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9b99286a7d3f%3A0x2415eebcaebededb!2z66mU7J207ZWE65OcIO2YuO2FlA!5e0!3m2!1sko!2skr!4v1739430995110!5m2!1sko!2skr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!--
+	* 카카오맵 - 약도서비스
+	* 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+	* 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+-->
+
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <!-- 1. 약도 노드 -->
+        <div id="daumRoughmapContainer1739844862701" class="root_daum_roughmap root_daum_roughmap_landing"></div>
     </div>
 
+    <!-- 2. 설치 스크립트 -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-
+    <!-- 3. 실행 스크립트 -->
+    <script charset="UTF-8">
+    new daum.roughmap.Lander({
+        "timestamp" : "1739844862701",
+        "key" : "2n3kf",
+        "mapWidth" : "800",
+        "mapHeight" : "600"
+    }).render();
+    </script>
 
     <footer>
 
