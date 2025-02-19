@@ -99,7 +99,7 @@ td.sponsor img {
     width: auto; 
     height: auto; 
     max-height: 90%; 
-    max-width: 90%;
+    max-width: 80%;
     object-fit: contain; 
     object-position: center; 
 }
